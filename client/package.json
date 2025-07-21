@@ -17,7 +17,10 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "source-map-js": "^1.2.0",
-    "url-polyfill": "^1.1.12"
+    "url-polyfill": "^1.1.12",
+    "@vercel/analytics": "^1.5.0",
+    "react-number-format": "^5.3.4",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
