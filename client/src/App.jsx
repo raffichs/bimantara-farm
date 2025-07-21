@@ -10,7 +10,7 @@ import CardPage from "./pages/user/CardPage";
 import EditPage from "./pages/admin/EditPage";
 import { Analytics } from "@vercel/analytics/react";
 
-axios.defaults.baseURL = "http://localhost:3001/"
+axios.defaults.baseURL = "https://bimantara-farm-api.vercel.app/"
 axios.defaults.withCredentials = true;
 
 function App() {
