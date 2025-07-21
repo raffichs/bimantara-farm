@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .root,
+  #root,
+  #docs-root {
+    --soft-brown: #babca6;
+    --dark-brown: #595110;
+    --dark-green: #354a32;
+    --gradient-color: linear-gradient(248deg, #73a03d 4.93%, #43633e 94.89%);
+  }
+
+  header {
+    font-family: "Segoe UI";
+  }
+
+  span {
+    color: #f5f3a6;
+    font-family: "Segoe UI";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h1 {
+    color: #595110;
+    /* font-family: Inter; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  h2 {
+    color: var(--Primary, rgba(89, 81, 16, 0.6));
+    /* H1 Mobile */
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  p {
+    color: #595110;
+    /* font-family: Inter; */
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .bg-gradient {
+    background: var(--gradient-color);
+  }
+
+  .bg-gradient2 {
+    background: linear-gradient(
+      248deg,
+      rgba(136, 130, 85, 0.7) 4.93%,
+      rgba(89, 81, 16, 0.7) 94.89%
+    );
+  }
+
+  .cta {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+  }
+
+  .add-cta,
+  .admin {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .search {
+    backdrop-filter: blur(40px);
+    box-shadow: 0px 4px 8px 0px rgba(89, 81, 16, 0.3);
+
+    .search_text {
+      /* color: var(--Primary, rgba(89, 81, 16, 0.6)); */
+
+      font-family: "Segoe UI";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  textarea,
+  input,
+  label,
+  .label,
+  select option {
+    width: 20rem;
+    /* height: 1.125rem; */
+    color: var(--Title, #000);
+    /* H2 Mobile */
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .h1-card {
+    color: var(--Title, #000);
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .desc-card {
+    color: var(--Subtitle, rgba(0, 0, 0, 0.6));
+    font-family: "Segoe UI";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .price-card {
+    color: #000;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .edit-card {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .detail-name {
+    color: #000;
+
+    /* H2 Mobile */
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .detail-price {
+    color: #595110;
+
+    /* H1 Mobile */
+    font-family: "Segoe UI";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .detail-heading {
+    color: #000;
+
+    /* Text Mobile */
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .detail-specs-name {
+    color: var(--Subtitle, rgba(0, 0, 0, 0.6));
+    text-align: center;
+
+    /* Text Mobile */
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .detail-specs {
+    color: #595110;
+    text-align: center;
+
+    /* Text Mobile */
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .detail-desc {
+    color: var(--Subtitle, rgba(0, 0, 0, 1));
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .detail-button {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .contacts div, .socmed-link {
+    color: #f5f3a6;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  hr {
+    background: rgba(245, 243, 166, 0.6);
+  }
+
+  .cr {
+    color: rgba(245, 243, 166, 0.6);
+    font-family: Montserrat;
+    font-size: 4px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #f97a00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .grayscalee {
+    filter: grayscale(0);
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease;
+  }
+
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
+
+  .label-login {
+    color: var(--Subtitle, rgba(0, 0, 0, 0.6));
+
+    /* Text Mobile */
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .button-login {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+}
+
+input,
+.input,
+textarea {
+  @apply w-full border my-1 py-0.5 px-2 rounded-lg border-zinc-800;
+}
